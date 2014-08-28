@@ -23,12 +23,15 @@
 }
 \end{frame}
 
+ %%%%%%%%%%% Objectives %%%%%%%%%%%
 \begin{frame}{Objectives}
 \begin{block}{}
 \begin{itemize}
 \item Adjoint solver for unsteady Navier-Stokes (including check pointing)
-\item Usage of adjoint calculation for shape optimization and optionally for optimal control
+%\item Usage of adjoint calculation for shape optimization and optionally for optimal control
+\item Shape optimization using unsteady adjoint solver with option for optimal control
 \item Optimize the performance with grid adaptation and optionally multi-gird
+%\item Performance optimization with grid adaptation optional objective with multi-grid
 \end{itemize}
 \end{block}
 \end{frame}
@@ -36,7 +39,7 @@
 \begin{frame}{Work Plan}
 
 \begin{block}{Preliminaries}
-\begin{itemize}\item Unsteady adjoint for a simple ODE with checkpointing
+\begin{itemize}\item Unsteady adjoint for a simple ODE with check pointing
 \item optimal control for simple ODE
 \end{itemize}
 \end{block}
@@ -114,7 +117,7 @@
 \begin{itemize}
 \item Familiarization in parallelization of adjoint solvers
 \item Review of AD tools for parallel application
-\item Implementation of operator overloading based AD to develop Adjoint solver
+\item Implementation of operator overloading based AD to develop Adjoint solver 
 
 \end{itemize}
 \end{block}
@@ -127,26 +130,25 @@
 \end{block}
 \end{frame}
 
-\begin{frame}{Duality Formulation For Adjoint Design}
-\begin{block}{Primal:}
-\begin{equation}
-Q^{n+1}=F(Q^n)
-\end{equation}
-\end{block}
-\begin{block}{Tangent Linear:}
-\begin{equation}
-\frac{\partial Q^{n+1}}{\partial \alpha} = \frac{\partial F}{\partial Q}\frac{\partial Q}{\partial \alpha} +\frac{\partial I}{\partial \alpha}
-\end{equation}
-\end{block}
-
-\begin{block}{Adjoint Equation:}
-\begin{equation}
-v^n = \highlight{\left(\frac{\partial F}{\partial Q}\right)^{T}}v^{n+1} +\frac{\partial I}{\partial Q}
-\end{equation}
-\end{block}
-
-
-\end{frame}
+%%%%%%%%%%% Formulation of Equation %%%%%%%%%%%
+%\begin{frame}{Duality Formulation For Adjoint Design}
+%\begin{block}{Primal:}
+%\begin{equation}
+%Q^{n+1}=F(Q^n)
+%\end{equation}
+%\end{block}
+%\begin{block}{Tangent Linear:}
+%\begin{equation}
+%\frac{\partial Q^{n+1}}{\partial \alpha} = \frac{\partial F}{\partial Q}\frac{\partial Q}{\partial \alpha} +\frac{\partial I}{\partial \alpha}
+%\end{equation}
+%\end{block}
+%
+%\begin{block}{Adjoint Equation:}
+%\begin{equation}
+%v^n = \highlight{\left(\frac{\partial F}{\partial Q}\right)^{T}}v^{n+1} +\frac{\partial I}{\partial Q}
+%\end{equation}
+%\end{block}
+%\end{frame}
 
 \begin{frame}{Advantage of Finite Difference to Develop Jacobian}
 \tiny
