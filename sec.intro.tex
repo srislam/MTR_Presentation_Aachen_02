@@ -2,7 +2,7 @@
 
 %\section*{Motivation} 
 \newcommand{\ltx}[1]{{\tt \textbackslash#1}}
-\begin{frame}{Personal Information}
+\begin{frame}{Background and Current Position}
 \uncover<1->{
 \begin{block}{Background}
 \begin{itemize}
@@ -13,7 +13,7 @@
 \end{itemize}
 \end{block}
 }
-\uncover<2->{
+\uncover<1->{
 \begin{block}{Current Position}
 \begin{itemize}
 \item Joined WUT as ESR 14 on October, 2013
@@ -25,7 +25,7 @@
 
  %%%%%%%%%%% Objectives %%%%%%%%%%%
 \begin{frame}{Objectives}
-\begin{block}{}
+\begin{block}{Primary Goal}
 \begin{itemize}
 \item Adjoint solver for unsteady Navier-Stokes (including check pointing)
 %\item Usage of adjoint calculation for shape optimization and optionally for optimal control
@@ -37,19 +37,21 @@
 \end{frame}
 
 \begin{frame}{Work Plan}
-
+\uncover<1->{
 \begin{block}{Preliminaries}
 \begin{itemize}\item Unsteady adjoint for a simple ODE with check pointing
 \item optimal control for simple ODE
 \end{itemize}
 \end{block}
-\pause
+}
+\uncover<1->{
 \begin{block}{Prerequisites}
 \begin{itemize}
 \item Unsteady Euler/NS solver (Residual Distribution Scheme)
 \end{itemize}
 \end{block}
-\pause
+}
+\uncover<1->{
 \begin{block}{Primary Task}
 \begin{itemize}
 \item Implementation of unsteady adjoint in the NS solver
@@ -57,7 +59,7 @@
 \item Gradient-based shape optimization
 \end{itemize}
 \end{block}
-
+}
 \end{frame}
 
 \begin{frame}{Work Plan - continued}
@@ -77,55 +79,55 @@
 \end{frame}
 
 
-%\begin{frame}{What this template is about}
-%  \uncover<+->{This template provides a unified style, but
-%    there is no requirement to adopt it. Use it, if you like it,
-%    feel free to modify the colour scheme to match your
-%    group style. 
-%  \vfil
-%  \uncover<+->{This is not an exhaustive explanation of latex
-%    and beamer, there are lots of guides and help pages
-%    around.}
-%  \vfil
-%  \uncover<+->{We just present typical elements we often use,
-%    as well as suggesting some better practices. Hopefully this
-%    is useful to save you time and help you make better presentations}
-%   }
-%  \vfil
-%  \uncover<+->{You will need to replace the QM logo at the bottom left
-%    with the logo of your group and/or institution. Look for the
-%    macro \ltx{instlogo} in {\tt aflo\_beamer\_style.tex}.
-%   }
-%\end{frame}
-
 \begin{frame}
 \frametitle{Progress}
-\begin{block}{Progress}
-\begin{itemize}
-\item Literature review
-\item In house training on adjoint-based mesh adaptation and optimization
-\item Training workshop attended on AD tools organized by AboutFlow project
-\item Training workshop attended on MPI organized by HLRS, Germany
-\item Development of Adjoint implementation on Euler solver is underway.
-\end{itemize}
-\end{block}
+	\begin{block}{Training}
+		\begin{itemize}
+			\item Literature review
+			\item In house training on adjoint-based mesh adaptation and optimization
+			\item Training workshop attended on AD tools organized by AboutFlow project
+			\item Training workshop attended on MPI organized by HLRS, Germany
+		\end{itemize}
+	\end{block}
+	\begin{block}{Current Status}
+		\begin{itemize}
+			\item Development of Adjoint implementation on Euler solver is underway.
+		\end{itemize}	
+	\end{block}
 \end{frame}
 
 \begin{frame}{Secondments}
 
 \begin{block}{RWTH}
 \begin{itemize}
+\item Envisaged Feb-March 2015
 \item Familiarization in parallelization of adjoint solvers
 \item Review of AD tools for parallel application
 \item Implementation of operator overloading based AD to develop Adjoint solver 
-
+\item Participation in courses on AD and scientific computing
 \end{itemize}
 \end{block}
-
-\begin{block}{RR}
+\end{frame}
+\begin{frame}{Secondment}
+\begin{block}{Rolls Royce}
 \begin{itemize}
+\item Planned October 2016
+\item Familiarization with the industrial flow cases
+\item Training on industrial approach to optimization
 \item Investigation of turbo-machinery problem using the developed adjoint solver 
 \item Application of grid adaptation tool chain available in WUT for turbo-machinery test cases
+\item Benchmarking of developed approaches with current practices
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Expected Outcome of the Project}
+\begin{block}{}
+\begin{itemize}
+\item Robust adjoint solver with shape optimization and grid adaptation capability
+\item Experience gain in cfd solver development and application to industrial flow problems
+\item Collaboration with academia and industry
+
 \end{itemize}
 \end{block}
 \end{frame}
