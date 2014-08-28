@@ -152,8 +152,8 @@
 %\end{block}
 %\end{frame}
 
-\begin{frame}{Advantage of Finite Difference to Develop Jacobian}
-\tiny
+%\begin{frame}{Advantage of Finite Difference to Develop Jacobian}
+%\tiny
 %\begin{equation}
 %\begin{bmatrix}
 %a_{11}  & a_{12}  & 0   & \cdots & 0 \\
@@ -180,25 +180,25 @@
 %\end{bmatrix}
 %\end{equation}
 
-\begin{equation}
-\begin{bmatrix}
-a_{11}  & a_{12}  & 0  & \cdots & \cdots & \cdots & 0 \\
-a_{21}  & a_{22}  & a_{23}  & \ddots & &&  \vdots \\
-0 & a_{32}  & a_{33} & a_{34}  & \ddots &   & \vdots \\
-\vdots & & \ddots & \ddots & \ddots & \ddots& \vdots\\
-\vdots  &   &  & a_{76}  & a_{77}  &  a_{78}  & 0\\
-\vdots  &   & & \ddots & a_{87}  & a_{88}  &  a_{89}\\
-0 & \cdots &  \cdots & \cdots & 0 & a_{98} & a_{99}  \\
-\end{bmatrix}
-\end{equation}
-\normalsize
-\begin{itemize}
-\item Developed Jacobian is a complete sparse matrix which can be calculated locally
-\item It is conveniently scalable
-\item Options to implement higher order FDM, if more accurate jacobian is required
-\item Tested for stationary problems with sufficient accuracy
-\end{itemize}
-\end{frame}
+%\begin{equation}
+%\begin{bmatrix}
+%a_{11}  & a_{12}  & 0  & \cdots & \cdots & \cdots & 0 \\
+%a_{21}  & a_{22}  & a_{23}  & \ddots & &&  \vdots \\
+%0 & a_{32}  & a_{33} & a_{34}  & \ddots &   & \vdots \\
+%\vdots & & \ddots & \ddots & \ddots & \ddots& \vdots\\
+%\vdots  &   &  & a_{76}  & a_{77}  &  a_{78}  & 0\\
+%\vdots  &   & & \ddots & a_{87}  & a_{88}  &  a_{89}\\
+%0 & \cdots &  \cdots & \cdots & 0 & a_{98} & a_{99}  \\
+%\end{bmatrix}
+%\end{equation}
+%\normalsize
+%\begin{itemize}
+%\item Developed Jacobian is a complete sparse matrix which can be calculated locally
+%\item It is conveniently scalable
+%\item Options to implement higher order FDM, if more accurate jacobian is required
+%\item Tested for stationary problems with sufficient accuracy
+%\end{itemize}
+%\end{frame}
 
 
 %\begin{frame}{Introduction, Table of Contents, Roadmap}
