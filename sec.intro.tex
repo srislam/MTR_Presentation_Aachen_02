@@ -30,7 +30,7 @@
 \item Adjoint solver for unsteady Navier-Stokes (including check pointing)
 %\item Usage of adjoint calculation for shape optimization and optionally for optimal control
 \item Shape optimization using unsteady adjoint solver with option for optimal control
-\item Optimize the performance with grid adaptation and optionally multi-gird
+\item Optimize the performance with grid adaptation and optionally multi-grid
 %\item Performance optimization with grid adaptation optional objective with multi-grid
 \end{itemize}
 \end{block}
@@ -38,25 +38,25 @@
 
 \begin{frame}{Work Plan}
 \uncover<1->{
-\begin{block}{Preliminaries}
-\begin{itemize}\item Unsteady adjoint for a simple ODE with check pointing
-\item optimal control for simple ODE
+\begin{block}{Preliminary Work}
+\begin{itemize}\item Unsteady adjoint for a simple  problem with check pointing
+\item Optimal control
 \end{itemize}
 \end{block}
 }
 \uncover<1->{
 \begin{block}{Prerequisites}
 \begin{itemize}
-\item Unsteady Euler/NS solver (Residual Distribution Scheme)
+\item Unsteady explicit Euler solver(Residual Distribution Scheme)
 \end{itemize}
 \end{block}
 }
 \uncover<1->{
-\begin{block}{Primary Task}
+\begin{block}{Primary Task till December 2014}
 \begin{itemize}
-\item Implementation of unsteady adjoint in the NS solver
-\item Implementation of moving geometry
-\item Gradient-based shape optimization
+\item Implementation of unsteady adjoint in the Euler solver 
+%\item Implementation of moving geometry 
+\item Gradient-based shape optimization for single objective (expected)
 \end{itemize}
 \end{block}
 }
@@ -85,8 +85,9 @@
 		\begin{itemize}
 			\item Literature review
 			\item In house training on adjoint-based mesh adaptation and optimization
-			\item Training workshop attended on AD tools organized by AboutFlow project
-			\item Training workshop attended on MPI organized by HLRS, Germany
+			\item Training workshop on AD tools organized by AboutFlow project
+			\item Training workshop on MPI organized by HLRS, Germany
+			\item HPC workshop on MPI, CUDA and OpenACC organized by AboutFlow project
 		\end{itemize}
 	\end{block}
 	\begin{block}{Current Status}
@@ -98,36 +99,51 @@
 
 \begin{frame}{Secondment}
 
-\begin{block}{RWTH}
+\begin{block}{RWTH on Feb-March 2015}
 \begin{itemize}
-\item Envisaged Feb-March 2015
+%\item Planned on Feb-March 2015
 \item Familiarization in parallelization of adjoint solvers
-\item Review of AD tools for parallel application
-\item Implementation of operator overloading based AD to develop Adjoint solver 
+%\item Review of AD tools for parallel application
+\item Use of operator overloading based AD to develop Adjoint solver 
 \item Participation in courses on AD and scientific computing
 \end{itemize}
 \end{block}
-\end{frame}
-\begin{frame}{Secondment}
-\begin{block}{Rolls Royce}
+\begin{block}{Rolls Royce on October 2015}
 \begin{itemize}
-\item Planned October 2015
-\item Familiarization with the industrial flow cases
+%\item Planned October 2015
+%\item Familiarization with the industrial flow cases
 \item Training on industrial approach to optimization
 \item Investigation of turbo-machinery problem using the developed adjoint solver 
 \item Application of grid adaptation tool chain available in WUT for turbo-machinery test cases
-\item Benchmarking of developed approaches with current practices
+%\item Benchmarking of developed approaches with current practices
 \end{itemize}
 \end{block}
 \end{frame}
 
+%\begin{frame}{Secondment}
+%\begin{block}{Rolls Royce}
+%\begin{itemize}
+%\item Planned October 2015
+%%\item Familiarization with the industrial flow cases
+%\item Training on industrial approach to optimization
+%\item Investigation of turbo-machinery problem using the developed adjoint solver 
+%\item Application of grid adaptation tool chain available in WUT for turbo-machinery test cases
+%%\item Benchmarking of developed approaches with current practices
+%\end{itemize}
+%\end{block}
+%\end{frame}
+
 \begin{frame}{Expected Outcome of the Project}
 \begin{block}{}
 \begin{itemize}
-\item Expected to become conversant with the CFD code development
+%\item Expected to become conversant with the CFD code development
 %\item Develop problem solving skill for cfd related
 \item Robust adjoint solver with shape optimization and grid adaptation capability
-\item Experience gain in cfd solver development and application to industrial flow problems
+% % % % % % %
+\item Benchmark of mesh adaptation toolchain 
+\item Performance comparison of mesh refinement and regeneration in the context of developed solver
+% % % % % % %
+\item Experience in cfd solver development and application to industrial flow problems
 \item Collaboration with academia and industry
 \end{itemize}
 \end{block}
@@ -135,6 +151,13 @@
 
 
 \begin{frame}{Future Plans}
+\begin{block}{Impact from AboutFlow Project}
+\begin{itemize}
+\item Experience on numerical optimization 
+\item AD tools
+\item Programming skill on sophisticated application
+\end{itemize}
+\end{block}
 \begin{block}{Research}
 \begin{itemize}
 \item Expected to employ adjoint technique for higher order RDS scheme
@@ -145,7 +168,6 @@
 \begin{itemize}
 \item Phd thesis submission in the last quarter of 2016
 \item Continue to engage in research on Adjoint optimization in academia or industry
-
 \end{itemize}
 \end{block}
 \end{frame}
